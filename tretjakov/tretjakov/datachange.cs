@@ -29,7 +29,7 @@ namespace tretjakov
         private void metroButton1_Click(object sender, EventArgs e)
         {
             String name = metroTextBox1.Text;
-            String weight = metroTextBox1.Text;
+            String weight = metroTextBox2.Text;
             DB db = new DB();
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();

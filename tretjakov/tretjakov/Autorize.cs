@@ -53,5 +53,12 @@ namespace tretjakov
         {
             Application.Exit();
         }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("server=localhost port=3306 connection - true");
+
+        }
     }
 }

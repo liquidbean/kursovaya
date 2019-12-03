@@ -34,6 +34,7 @@
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // metroTextBox1
@@ -94,12 +95,25 @@
             this.metroLabel2.TabIndex = 6;
             this.metroLabel2.Text = "Пароль";
             // 
+            // metroButton3
+            // 
+            this.metroButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroButton3.Location = new System.Drawing.Point(116, 413);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(154, 28);
+            this.metroButton3.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroButton3.TabIndex = 7;
+            this.metroButton3.Text = "Проверить подключение";
+            this.metroButton3.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
+            // 
             // Autorize
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(360, 464);
+            this.Controls.Add(this.metroButton3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroButton2);
@@ -125,6 +139,7 @@
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroButton metroButton3;
     }
 }
 
