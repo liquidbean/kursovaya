@@ -9,7 +9,7 @@ namespace tretjakov
 {
     class DB
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=Liquidchair0146;database=kursovaya_tret;CharSet=utf8");
+        MySqlConnection connection = new MySqlConnection("server=192.168.201.10;port=3306;username=student2;password=student2;database=kursovaya_tret;CharSet=utf8");
         public void openConnection()
         {
             if (connection.State == System.Data.ConnectionState.Closed)
