@@ -57,7 +57,19 @@ namespace tretjakov
         private void metroButton3_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("server=localhost port=3306 connection - true");
+            DB db = new DB();
+
+            try
+            {
+                db.openConnection();
+                if (db.getConnection() != null){
+                    MessageBox.Show("Соединение есть");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Соеденения нет");
+            }
 
         }
     }
